@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<robot name="bottom_slift" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="slider1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="slider1">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_1">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>

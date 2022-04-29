@@ -1,0 +1,4 @@
+lift_slider_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: slider1
+    pid: {p: 100.0, i: 1, d: 10.0}
